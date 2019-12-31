@@ -1,0 +1,52 @@
+@import '../../../../shared/styles/tools/tools.scss';
+.Header{
+    @include flex($dir:column,$just:center);
+    height:60vh;
+    position:relative;
+    background:#D69648;
+    color:white;
+    margin-bottom:50px;
+    .HeaderContent{
+        @include flex($dir:column);
+        margin-bottom:25%;
+        // max-width:550px;
+    }
+    .HeaderCutterImg{
+        position:absolute;
+        bottom:-2px;
+        width:100%;
+    }
+    .HeaderButtons{
+        margin-left:auto;
+    }
+}
+
+.ButtonOrder{
+    @include button($color:#D69648,$bg:white,$size:'sm');
+    margin-right:5px;
+}
+.ButtonReserve{
+    @include button($color:white,$bg:#B57824,$size:'sm');
+}
+
+.SectionAbout{
+    color:#D69648;
+    margin-bottom:80px;
+    .Text{
+        margin-left:20px;
+    }
+    .AboutContent{
+        position:relative;
+    }
+    .TextBorder{
+        position: absolute;
+        bottom:-30px;
+    }
+}
+
+
+.SectionMenus{
+    @include flex($dir:column);//Must stay Menu componment relies on this line 
+    margin-bottom:50px;
+    color:white;
+}

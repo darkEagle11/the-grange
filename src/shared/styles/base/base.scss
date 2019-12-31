@@ -1,9 +1,12 @@
 * {
     box-sizing:border-box;
 }
+
 body{
     line-height:1.1;
+    font-family:'Lato', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lobster Two', cursive;
 } 
@@ -23,10 +26,6 @@ h3 {
     line-height:1.2;
 }
 
-p {
-  font-family: 'Lato', sans-serif;
-}
-  
 //   @include mq('med'){
 //     h1{
 //       font-size:3.157em;

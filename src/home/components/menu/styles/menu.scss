@@ -1,0 +1,70 @@
+@import '../../../../shared/styles/tools/tools.scss';
+
+
+.DefaultMenuStyles{
+    background:gray;
+    color:white;
+}
+
+.SingleMenu{
+    position:relative;
+    @include flex($align:center);
+    width:50vw;
+    height:50vw;
+    min-width:230px;
+    min-height:230px;
+    overflow:hidden;
+    h3{
+        z-index:30;
+        margin-left:25%;
+    }
+    &:hover .backgroundImage{
+        transition:.5s linear;
+        transform:scale(1.2);
+    }
+    .CutterHexagon{
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        box-sizing: border-box;
+        z-index:20;
+    }
+    .Content{
+        @include flex($align:center);
+        width: 98%;
+        height: 98%;
+        position:relative;
+    }
+}
+
+.SingleMenuReverse{
+    margin-left:auto;
+    justify-content: flex-end;
+    margin-top:-3%; //to make blocks look closer
+    .Content{
+        justify-content: flex-end;
+    }
+    h3{
+        margin-right:25%;
+    }
+    .CutterHexagon{
+        transform:rotate(180deg);
+    }
+}
+
+.backgroundImage{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:10;
+    object-fit:cover;
+}
+.Overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(black,.4);
+    z-index:15;
+}

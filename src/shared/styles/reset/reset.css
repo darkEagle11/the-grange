@@ -340,4 +340,9 @@ template {
 [hidden] {
   display: none;
 }
+
+button {
+  outline: none;
+  border: 0;
+}
 /*# sourceMappingURL=reset.css.map */

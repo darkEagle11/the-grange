@@ -1,0 +1,22 @@
+.Footer{
+    background:#A48D4B;
+    color:white;
+    text-align:center;
+    padding:40px 0;
+    position:relative;
+    .FooterCutterImg{
+        position:absolute;
+        top:-10px;
+        left:0;
+        width:100%;
+        transform:rotate(180deg);
+    }
+    ul{
+        list-style: none;
+        padding-left:0;
+        li{
+            font-weight:300;
+            margin-bottom:5px;
+        }
+    }
+}
