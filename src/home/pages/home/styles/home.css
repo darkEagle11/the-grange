@@ -25,6 +25,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 25%;
+  max-width: 460px;
 }
 
 .Header .HeaderCutterImg {
@@ -80,5 +81,76 @@
           flex-direction: column;
   margin-bottom: 50px;
   color: white;
+}
+
+.SectionMenus .TopCutter,
+.SectionMenus .BottomCutter {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .Header {
+    height: 70vh;
+    margin-bottom: 125px;
+  }
+  .Header .HeaderContent {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 10%;
+  }
+  .Header .HeaderCutterImg {
+    bottom: -25px;
+  }
+  .SectionAbout {
+    margin-bottom: 40px;
+  }
+  .SectionMenus {
+    background: url("https://unsplash.com/photos/6Z9BQKksmbE/download") fixed no-repeat center center/cover;
+    position: relative;
+  }
+  .SectionMenus .TopCutter,
+  .SectionMenus .BottomCutter {
+    display: block;
+    width: 100%;
+  }
+  .SectionMenus .TopCutterBorder {
+    width: 100%;
+    background: white;
+    height: 93px;
+    margin-top: -3px;
+    position: absolute;
+    top: 0;
+  }
+  .SectionMenus .TopCutter {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 100%;
+    margin-top: 88px;
+  }
+  .SectionMenus .BottomCutter {
+    margin-bottom: -2px;
+  }
+  .MenuMedGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 630px;
+  }
+}
+
+@media (min-width: 950px) {
+  .Header .HeaderCutterImg {
+    margin-bottom: -50px;
+  }
+  .SectionMenus .MenuMedGroup {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=home.css.map */

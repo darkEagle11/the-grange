@@ -1,4 +1,6 @@
 @import '../../../../shared/styles/tools/tools.scss';
+
+$menu-cutter-marginTop: 90px;
 .Header{
     @include flex($dir:column,$just:center);
     height:60vh;
@@ -9,7 +11,7 @@
     .HeaderContent{
         @include flex($dir:column);
         margin-bottom:25%;
-        // max-width:550px;
+        max-width:460px;
     }
     .HeaderCutterImg{
         position:absolute;
@@ -49,4 +51,71 @@
     @include flex($dir:column);//Must stay Menu componment relies on this line 
     margin-bottom:50px;
     color:white;
+    .TopCutter,
+    .BottomCutter{
+        display:none;
+    }
+}
+
+@include mq('med'){
+    .Header{
+        height:70vh;
+        margin-bottom:125px;
+        .HeaderContent{
+            align-self:flex-start;
+            margin-bottom:10%;
+        }
+        .HeaderCutterImg{
+            bottom:-25px;
+        }
+    }
+    .SectionAbout{
+        margin-bottom:40px;
+    }
+    .SectionMenus{
+        background:url('https://unsplash.com/photos/6Z9BQKksmbE/download') fixed no-repeat center center/cover;
+        position:relative;
+        .TopCutter,
+        .BottomCutter{
+            display:block;
+            width:100%;
+        }
+        .TopCutterBorder{
+            width:100%;
+            background:white;
+            height:$menu-cutter-marginTop + 3px;
+            margin-top:-3px;
+            position:absolute;
+            top:0;
+        }
+        .TopCutter{
+            transform: rotate(180deg);
+            width:100%;
+            margin-top:$menu-cutter-marginTop - 2px;
+        }
+
+        .BottomCutter{
+            margin-bottom:-2px;
+        }
+    }
+
+    .MenuMedGroup{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        max-width:630px;
+    }
+}
+
+@include mq('large'){
+    .Header{
+        .HeaderCutterImg{
+            margin-bottom:-50px;
+        }
+    }
+    .SectionMenus{
+        .MenuMedGroup{
+            justify-content: flex-start;
+        }
+    }
 }

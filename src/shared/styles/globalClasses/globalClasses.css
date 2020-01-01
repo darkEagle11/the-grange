@@ -1,4 +1,26 @@
 .container {
   padding: 0 1em;
 }
+
+@media (min-width: 601px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 85%;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 601px) {
+  .ContainerMed {
+    margin: 0 auto;
+    padding: 0;
+    width: 85%;
+  }
+}
 /*# sourceMappingURL=globalClasses.css.map */

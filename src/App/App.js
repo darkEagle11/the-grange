@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HomeBuilder from '../home/pages/home/home';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import classes from './styles/App.css';
-import Layout from '../shared/layout/layout';
+import Layout from '../layout/layout';
 
 class App extends Component {
   render() {

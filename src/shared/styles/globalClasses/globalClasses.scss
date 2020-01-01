@@ -1,3 +1,21 @@
+@import '../tools/tools.scss';
+
 .container{
     padding:0 1em;
+    @include mq('med'){
+        margin:0 auto;
+        padding:0;
+        width:85%;
+    }
+    @include mq('large'){
+        width:60%;
+    }
+}
+
+.ContainerMed{
+    @include mq('med'){
+        margin:0 auto;
+        padding:0;
+        width:85%;
+    }
 }

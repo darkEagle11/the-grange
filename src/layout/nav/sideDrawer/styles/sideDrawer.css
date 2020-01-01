@@ -1,0 +1,143 @@
+.Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.Navbar .MenuBox,
+.Navbar .CartBox {
+  position: relative;
+  height: 75px;
+  width: 75px;
+}
+
+.Navbar .MenuIcon,
+.Navbar .CartIcon {
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+}
+
+.Navbar .MenuIcon {
+  left: 17px;
+  color: white;
+}
+
+.Navbar .CartBox {
+  top: -1px;
+}
+
+.Navbar .CartIcon {
+  right: 15px;
+  color: #D69648;
+}
+
+.SideDrawer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 55vw;
+  background: white;
+}
+
+.SideDrawer .NavItem {
+  display: block;
+  padding: 30px 20px;
+  font-size: 18px;
+  -webkit-transition: 0.3s cubic-bezier(0.58, 0.14, 0.95, 0.6);
+  transition: 0.3s cubic-bezier(0.58, 0.14, 0.95, 0.6);
+  color: inherit;
+}
+
+.SideDrawer .NavItem:hover {
+  background: rgba(164, 141, 75, 0.8);
+  color: white;
+}
+
+.SideDrawer .NavBrand {
+  color: #F4774D;
+  font-weight: 400;
+}
+
+.SideDrawer .CloseDrawer {
+  margin-left: auto;
+  font-size: 30px;
+  padding: 10px;
+  color: #A48D4B;
+}
+
+.SideDrawer .DropDownContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.SideDrawer .DropDownContainer .DropDownBtn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+}
+
+.SideDrawer .DropDownContainer .DropDownLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: -136px;
+  top: 0;
+}
+
+.SideDrawer .DropDownContainer .DropDownLinks a {
+  display: none;
+  padding: 20px 50px 20px 10px;
+  background: #D69648;
+  color: white;
+  font-size: 18px;
+}
+
+.SideDrawer .DropDownContainer .DropDownLinks a:not(:last-of-type) {
+  border-bottom: 1px solid white;
+}
+
+.SideDrawer .DropDownContainer .DropDownLinks a:hover {
+  background: #A48D4B;
+}
+
+.SideDrawer .DropDownContainer:hover .DropDownLinks a {
+  display: block;
+}
+
+.SideDrawer .Backdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 601px) {
+  .Navbar,
+  .SideDrawer,
+  .Backdrop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=sideDrawer.css.map */

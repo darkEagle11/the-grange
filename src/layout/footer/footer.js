@@ -1,8 +1,8 @@
 import React from 'react';
 import FooterSection from './footerSection/footerSection';
 import classes from './styles/footer.css';
-import globalClasses from '../../styles/globalClasses/globalClasses.css';
-import cutter from '../../../assets/cutter.svg';
+import globalClasses from '../../shared/styles/globalClasses/globalClasses.css';
+import cutter from '../../assets/cutter.svg';
 
 const footer = props => {
     return (
