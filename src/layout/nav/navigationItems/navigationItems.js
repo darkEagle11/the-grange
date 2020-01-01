@@ -4,9 +4,12 @@ import NavigationItem from './navigationItem/navigationItem'
 const navigationItems = props => {
     return (
         <React.Fragment>
-            <a
+            <NavigationItem
+                link="/"
                 className={[props.navbrandStyle, props.navItemStyle].join(' ')}
-                onClick={props.click}>The Grange</a>
+                onClick={props.click}>
+                The Grange
+            </NavigationItem>
 
             <div className={props.webpageLinksStyle}>
                 <div className={[props.navItemStyle, props.dropDownStyle].join(' ')}>

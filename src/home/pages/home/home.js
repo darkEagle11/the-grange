@@ -14,7 +14,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <header className={classes.Header}>
-                    <div className={[globalClasses.container].join(' ')}>
+                    <div className={[globalClasses.Container].join(' ')}>
                         <div className={classes.HeaderContent}>
                             <h1>The<br /> Grange</h1>
                             <div className={classes.HeaderButtons}>
@@ -27,7 +27,7 @@ class Home extends Component {
                 </header>
 
                 <section className={classes.SectionAbout}>
-                    <div className={[globalClasses.container, classes.AboutContent].join(' ')}>
+                    <div className={[globalClasses.Container, classes.AboutContent].join(' ')}>
                         <p className={classes.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
                         <img className={classes.TextBorder} src={corneredBorder} alt="" />
                     </div>
@@ -39,15 +39,19 @@ class Home extends Component {
                     <div className={[globalClasses.ContainerMed, classes.MenuMedGroup].join(' ')}>
                         <Menu
                             name="Breakfast"
+                            menuPath="/menu/breakfast"
                             bgImg={"https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"} />
                         <Menu
                             name="Lunch"
+                            menuPath="/menu/lunch"
                             reverse
                             bgImg={"https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"} />
                         <Menu
                             name="Dinner"
+                            menuPath="/menu/dinner"
                             bgImg={"https://images.unsplash.com/photo-1534070189982-818bb5622474?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"} />
                         <Menu name="Drinks"
+                            menuPath="/menu/drinks"
                             reverse
                             bgImg={"https://images.unsplash.com/photo-1516600164266-f3b8166ae679?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"} />
                     </div>

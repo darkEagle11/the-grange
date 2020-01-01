@@ -7,7 +7,7 @@ import cutter from '../../assets/cutter.svg';
 const footer = props => {
     return (
         <footer className={classes.Footer}>
-            <div className={globalClasses.container}>
+            <div className={globalClasses.Container}>
                 <img className={classes.FooterCutterImg} src={cutter} alt="" />
                 <FooterSection
                     title="Hours"

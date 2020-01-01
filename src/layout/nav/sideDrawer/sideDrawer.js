@@ -8,7 +8,7 @@ import Backdrop from '../../../shared/UI/Backdrop/Backdrop';
 import NavigationItems from '../navigationItems/navigationItems';
 
 const sideDrawer = props => {
-    const [showDrawerState, setShowDrawerState] = useState(true)
+    const [showDrawerState, setShowDrawerState] = useState(false)
     return (
         <React.Fragment>
             <nav className={classes.Navbar}>

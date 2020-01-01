@@ -9,10 +9,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60vh;
-  position: relative;
   background: #D69648;
   color: white;
+  height: 60vh;
+  position: relative;
   margin-bottom: 50px;
 }
 
@@ -49,7 +49,7 @@
 .ButtonReserve {
   border-radius: 4px;
   color: white;
-  background: #B57824;
+  background: #b57824;
   padding: 6px 15px;
 }
 
@@ -66,7 +66,7 @@
   position: relative;
 }
 
-.SectionAbout .TextBorder {
+.SectionAbout .AboutContent .TextBorder {
   position: absolute;
   bottom: -30px;
 }
@@ -114,17 +114,16 @@
     width: 100%;
   }
   .SectionMenus .TopCutterBorder {
+    position: absolute;
+    top: 0;
     width: 100%;
     background: white;
     height: 93px;
     margin-top: -3px;
-    position: absolute;
-    top: 0;
   }
   .SectionMenus .TopCutter {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    width: 100%;
     margin-top: 88px;
   }
   .SectionMenus .BottomCutter {
@@ -134,11 +133,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 630px;
   }
 }

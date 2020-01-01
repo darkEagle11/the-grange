@@ -1,0 +1,18 @@
+@import '../../../../shared/styles/tools/tools.scss';
+
+.Header{
+    padding-top:70px;
+    margin-bottom:40px;
+    color:#F4774D;
+    text-align:center;
+    .HeaderDescrip{
+        text-transform:uppercase;
+    }
+}
+
+.MenuItems{
+    margin-bottom:100px;
+}
+.NoItems{
+    color:black;
+}

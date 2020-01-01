@@ -1,0 +1,19 @@
+.Header {
+  padding-top: 70px;
+  margin-bottom: 40px;
+  color: #F4774D;
+  text-align: center;
+}
+
+.Header .HeaderDescrip {
+  text-transform: uppercase;
+}
+
+.MenuItems {
+  margin-bottom: 100px;
+}
+
+.NoItems {
+  color: black;
+}
+/*# sourceMappingURL=menuLayout.css.map */

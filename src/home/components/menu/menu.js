@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './styles/menu.css';
 import cutterHexagon from '../../../assets/cutter-hexagon.svg';
 import fullHexagon from '../../../assets/full-hexagon.svg';
+import { withRouter } from 'react-router-dom';
 
 const menu = props => {
     const menuClasses = [classes.SingleMenu];
@@ -12,9 +13,10 @@ const menu = props => {
     if (props.reverse) {
         menuClasses.push(classes.SingleMenuReverse)
     }
+
     return (
         <React.Fragment>
-            <div className={menuClasses.join(' ')}>
+            <div className={menuClasses.join(' ')} onClick={() => props.history.push(props.menuPath)}>
                 <div className={menuContentClasses.join(' ')}>
                     <h3>{props.name}</h3>
                     <div className={classes.Overlay}></div>
@@ -23,7 +25,7 @@ const menu = props => {
                 <img className={classes.CutterHexagon} src={cutterHexagon} alt="" />
             </div>
 
-            <div className={classes.SingleMenuMed}>
+            <div className={classes.SingleMenuMed} onClick={() => props.history.push(props.menuPath)}>
                 <h2>{props.name}</h2>
                 <img className={classes.FullHexImg} src={fullHexagon} alt="" />
             </div>
@@ -31,4 +33,4 @@ const menu = props => {
     )
 };
 
-export default menu;
+export default withRouter(menu);

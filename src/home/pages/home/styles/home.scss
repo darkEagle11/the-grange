@@ -3,10 +3,9 @@
 $menu-cutter-marginTop: 90px;
 .Header{
     @include flex($dir:column,$just:center);
+    @include bg($bg:$orange);
     height:60vh;
     position:relative;
-    background:#D69648;
-    color:white;
     margin-bottom:50px;
     .HeaderContent{
         @include flex($dir:column);
@@ -14,8 +13,7 @@ $menu-cutter-marginTop: 90px;
         max-width:460px;
     }
     .HeaderCutterImg{
-        position:absolute;
-        bottom:-2px;
+        @include position($position:absolute,$bottom:-2px);
         width:100%;
     }
     .HeaderButtons{
@@ -24,25 +22,24 @@ $menu-cutter-marginTop: 90px;
 }
 
 .ButtonOrder{
-    @include button($color:#D69648,$bg:white,$size:'sm');
+    @include button($color:$orange,$bg:$white);
     margin-right:5px;
 }
 .ButtonReserve{
-    @include button($color:white,$bg:#B57824,$size:'sm');
+    @include button($color:$white,$bg:$dark-orange);
 }
 
 .SectionAbout{
-    color:#D69648;
+    color:$orange;
     margin-bottom:80px;
     .Text{
         margin-left:20px;
     }
     .AboutContent{
         position:relative;
-    }
-    .TextBorder{
-        position: absolute;
-        bottom:-30px;
+        .TextBorder{
+            @include position($position:absolute,$bottom:-30px);
+        }
     }
 }
 
@@ -50,7 +47,7 @@ $menu-cutter-marginTop: 90px;
 .SectionMenus{
     @include flex($dir:column);//Must stay Menu componment relies on this line 
     margin-bottom:50px;
-    color:white;
+    color:$white;
     .TopCutter,
     .BottomCutter{
         display:none;
@@ -81,16 +78,14 @@ $menu-cutter-marginTop: 90px;
             width:100%;
         }
         .TopCutterBorder{
+            @include position($position:absolute,$top:0);
             width:100%;
             background:white;
             height:$menu-cutter-marginTop + 3px;
             margin-top:-3px;
-            position:absolute;
-            top:0;
         }
         .TopCutter{
             transform: rotate(180deg);
-            width:100%;
             margin-top:$menu-cutter-marginTop - 2px;
         }
 
@@ -100,9 +95,7 @@ $menu-cutter-marginTop: 90px;
     }
 
     .MenuMedGroup{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: center;
+        @include flex($wrap:wrap,$just:center);
         max-width:630px;
     }
 }

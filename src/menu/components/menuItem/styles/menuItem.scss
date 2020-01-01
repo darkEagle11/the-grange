@@ -1,0 +1,31 @@
+@import '../../../../shared/styles/tools/tools.scss';
+
+.MenuItem{
+    @include flex($just:space-between);
+    margin-bottom:40px;
+    color:#D69648;
+    .ItemInfo{
+        flex-basis:70%;
+        .ItemHeader{
+            font-weight:700;
+            font-size:20px;
+            margin:0;
+            text-transform:capitalize;
+        }
+    }
+
+    .ItemPurchase{
+        @include flex($dir:column,$just:space-between);
+        .ItemPrice{
+            text-align:right;
+            font-size:18px;
+        }
+        .ItemOrderBtn{
+            background:#373737;
+            color:white;
+            font-weight:300;
+            padding:8px 5px;
+            border-radius:3px;
+        }
+    }
+}

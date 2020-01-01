@@ -1,0 +1,49 @@
+.MenuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+  color: #D69648;
+}
+
+.MenuItem .ItemInfo {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.MenuItem .ItemInfo .ItemHeader {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.MenuItem .ItemPurchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MenuItem .ItemPurchase .ItemPrice {
+  text-align: right;
+  font-size: 18px;
+}
+
+.MenuItem .ItemPurchase .ItemOrderBtn {
+  background: #373737;
+  color: white;
+  font-weight: 300;
+  padding: 8px 5px;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=menuItem.css.map */

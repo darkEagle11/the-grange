@@ -66,3 +66,23 @@
         padding:10px 20px;
     }
 }
+
+@mixin position(
+    $position:relative,
+    $top:null,
+    $left:null,
+    $right:null,
+    $bottom: null,
+    $zIndex:null){
+    position:$position;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    z-index:$zIndex;
+}
+
+@mixin bg($bg:null,$color:white){
+    background:$bg;
+    color:$color;
+}   

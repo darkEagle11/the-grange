@@ -1,15 +1,14 @@
 @import '../../../shared/styles/tools/tools.scss';
 
 .Footer{
-    background:#A48D4B;
-    color:white;
+    background:$dark-yellow;
+    color:$white;
     text-align:center;
     padding:40px 0;
     position:relative;
+    margin-top:auto;
     .FooterCutterImg{
-        position:absolute;
-        top:-10px;
-        left:0;
+        @include position($position:absolute,$top:-10px,$left:0);
         width:100%;
         transform:rotate(180deg);
     }

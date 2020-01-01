@@ -4,7 +4,8 @@
     "sources": [
         "tools.scss",
         "variables/variables.scss",
-        "mixins/mixins.scss"
+        "mixins/mixins.scss",
+        "functions/functions.scss"
     ],
     "names": [],
     "file": "tools.css"

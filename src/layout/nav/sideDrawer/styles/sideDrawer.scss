@@ -1,12 +1,8 @@
 @import '../../../../shared/styles/tools/tools.scss';
 .Navbar{
     @include flex($just:space-between);
-    position:fixed;
-    top:0;
-    left:0;
+    @include position($position:fixed,$top:0, $left:0, $zIndex:50);
     width:100%;
-    z-index:50;
-
     .MenuBox,
     .CartBox{
         position:relative;
@@ -14,13 +10,12 @@
     }
     .MenuIcon,
     .CartIcon{
-        position:absolute;
-        top:20px;
+        @include position($position:absolute,$top:20px);
         font-size:30px;
     }
     .MenuIcon{
         left:17px;
-        color:white;
+        color:$white;
     }
 
     .CartBox{
@@ -28,7 +23,7 @@
     }
     .CartIcon{
         right:15px;
-        color:#D69648;
+        color:$orange;
     }
 }
 .SideDrawer{
@@ -36,7 +31,7 @@
     @include flex($dir:column);
     height:100%;
     width:55vw;
-    background:white;
+    background:$white;
 
     .NavItem{
         display:block;
@@ -45,20 +40,20 @@
         transition:.3s cubic-bezier(.58,.14,.95,.6);
         color:inherit;
         &:hover{
-            background:rgba(#A48D4B,.8);
-            color:white;
+            background:rgba($dark-yellow,.8);
+            color:$white;
         }
     }
 
     .NavBrand{
-        color:#F4774D;
+        color:$orange-red;
         font-weight:400;
     }
     .CloseDrawer{
         margin-left:auto;
         font-size:30px;
         padding:10px;
-        color:#A48D4B;
+        color:$dark-yellow;
     }
     .DropDownContainer{
         display:flex;
@@ -70,22 +65,19 @@
             padding:0;
         }
         .DropDownLinks{
-            display:flex;
-            flex-direction:column;
-            position:absolute;
-            right:-136px;
-            top:0;
+            @include flex($dir:column);
+            @include position($position:absolute,$right:-136px,$top:0);
             a{
                 display:none;
                 padding:20px 50px 20px 10px;
-                background:#D69648;
-                color:white;
+                background:$orange;
+                color:$white;
                 font-size:18px;
                 &:not(:last-of-type){
-                    border-bottom:1px solid white;
+                    border-bottom:1px solid $white;
                 }
                 &:hover{
-                    background:#A48D4B;
+                    background:$dark-yellow;
                 }
             }
         }

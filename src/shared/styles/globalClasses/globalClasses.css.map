@@ -5,7 +5,8 @@
         "globalClasses.scss",
         "../tools/tools.scss",
         "../tools/variables/variables.scss",
-        "../tools/mixins/mixins.scss"
+        "../tools/mixins/mixins.scss",
+        "../tools/functions/functions.scss"
     ],
     "names": [],
     "file": "globalClasses.css"

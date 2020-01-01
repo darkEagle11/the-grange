@@ -7,15 +7,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
     width: 100%;
     height: 50px;
     background: white;
     -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 50;
   }
   .Navbar .NavItem {
     display: -webkit-box;
@@ -29,11 +29,18 @@
             justify-content: center;
   }
   .NavBrand {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-left: 5%;
     color: #F4774D;
-    font-weight: 400;
     font-family: 'Lobster Two',cursive;
+  }
+  .nav-item-base, .WebpageLinks .NavItem, .Navbar .DropDownBtn {
+    font-weight: 300;
+    background: white;
+    color: #776f6f;
+  }
+  .nav-item-base:hover, .WebpageLinks .NavItem:hover, .Navbar .DropDownBtn:hover {
+    color: #b57824;
   }
   .WebpageLinks {
     width: 50%;
@@ -45,11 +52,6 @@
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    font-weight: 300;
-    color: #776f6f;
-  }
-  .WebpageLinks .NavItem:hover {
-    color: #b57824;
   }
   .Navbar .DropDownContainer {
     display: -webkit-box;
@@ -65,7 +67,7 @@
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .Navbar .DropDownLinks {
+  .Navbar .DropDownContainer .DropDownLinks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75,27 +77,22 @@
             flex-direction: column;
     display: none;
   }
-  .Navbar .DropDownItem {
+  .Navbar .DropDownContainer .DropDownItem {
     background: #b57824;
     color: white;
     padding: 15px 10px;
   }
-  .Navbar .DropDownItem:not(:last-of-type) {
-    border-bottom: 1px solid #ffffff;
+  .Navbar .DropDownContainer .DropDownItem:not(:last-of-type) {
+    border-bottom: 1px solid white;
   }
-  .Navbar .DropDownItem:hover {
+  .Navbar .DropDownContainer .DropDownItem:hover {
     color: #b57824;
     background: white;
   }
   .Navbar .DropDownBtn {
     display: block;
     height: 50px;
-    font-weight: 300;
-    color: #776f6f;
     padding: 0;
-  }
-  .Navbar .DropDownBtn:hover {
-    color: #b57824;
   }
   .Navbar .DropDownContainer:hover .DropDownLinks {
     display: -webkit-box;

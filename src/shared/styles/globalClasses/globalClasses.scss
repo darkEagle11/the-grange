@@ -1,6 +1,6 @@
 @import '../tools/tools.scss';
 
-.container{
+.Container{
     padding:0 1em;
     @include mq('med'){
         margin:0 auto;
