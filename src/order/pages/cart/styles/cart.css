@@ -1,0 +1,41 @@
+.CartContainer {
+  padding-top: 70px;
+  margin-bottom: 80px;
+}
+
+.TotalContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Header {
+  color: #D69648;
+  margin-bottom: 40px;
+}
+
+.CheckoutBtn {
+  border-radius: 4px;
+  color: white;
+  background: #4F8691;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  padding: 6px 15px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  padding: 12px;
+}
+
+.CheckoutBtn:hover {
+  background: #3d6770;
+}
+/*# sourceMappingURL=cart.css.map */

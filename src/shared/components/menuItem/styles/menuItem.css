@@ -1,3 +1,10 @@
+.btn-base, .MenuItem .ItemPurchase .ItemOrderBtn, .OrderItem .ItemPurchase .ItemDeleteBtn {
+  color: white;
+  font-weight: 300;
+  padding: 8px 5px;
+  border-radius: 3px;
+}
+
 .MenuItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,14 +43,23 @@
 
 .MenuItem .ItemPurchase .ItemPrice {
   text-align: right;
+  margin-top: 0;
   font-size: 18px;
 }
 
 .MenuItem .ItemPurchase .ItemOrderBtn {
   background: #373737;
-  color: white;
-  font-weight: 300;
-  padding: 8px 5px;
-  border-radius: 3px;
+}
+
+.OrderItem {
+  color: #776f6f;
+}
+
+.OrderItem .ItemInfo .ItemHeader {
+  font-weight: 400;
+}
+
+.OrderItem .ItemPurchase .ItemDeleteBtn {
+  background: #8E5A49;
 }
 /*# sourceMappingURL=menuItem.css.map */

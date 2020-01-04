@@ -1,0 +1,55 @@
+.Form {
+  margin-bottom: 80px;
+  color: #5d5656;
+}
+
+.InputGroupName {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.InputGroupPhone {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (60px)[2] 70px;
+      grid-template-columns: repeat(2, 60px) 70px;
+  grid-gap: 10px;
+}
+
+.InputGroupDate {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (43px)[2] 75px;
+      grid-template-columns: repeat(2, 43px) 75px;
+  grid-gap: 10px;
+}
+
+.InputGroupTime {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (43px)[3] 50px;
+      grid-template-columns: repeat(3, 43px) 50px;
+  grid-gap: 10px;
+}
+
+.InputGroupTime select {
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+.SubmitBtn {
+  border-radius: 4px;
+  color: white;
+  background: #4F8691;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  padding: 10px 20px;
+}
+
+.SubmitBtn:hover {
+  background: #3d6770;
+}
+/*# sourceMappingURL=reserveForm.css.map */

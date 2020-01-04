@@ -42,15 +42,27 @@
   border-radius: 4px;
   color: #D69648;
   background: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   padding: 6px 15px;
   margin-right: 5px;
+}
+
+.ButtonOrder:hover {
+  background: #e6e6e6;
 }
 
 .ButtonReserve {
   border-radius: 4px;
   color: white;
   background: #b57824;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   padding: 6px 15px;
+}
+
+.ButtonReserve:hover {
+  background: #8a5c1c;
 }
 
 .SectionAbout {

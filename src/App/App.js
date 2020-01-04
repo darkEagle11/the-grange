@@ -9,6 +9,9 @@ import BreakfastBuilder from '../menu/pages/breakfast/breakfast';
 import LunchBuilder from '../menu/pages/lunch/lunch';
 import DinnerBuilder from '../menu/pages/dinner/dinner';
 import DrinksBuilder from '../menu/pages/drinks/drinks';
+import ReserveBuilder from '../reserve/pages/reserve/reserve';
+import CartBuilder from '../order/pages/cart/cart';
+import FoodModal from '../order/pages/foodModal/foodModal';
 
 class App extends Component {
   render() {
@@ -16,13 +19,16 @@ class App extends Component {
       <div className={classes.App}>
         <Layout>
           <Switch>
-            <Route path="/menu/breakfast" exact component={BreakfastBuilder} />
-            <Route path="/menu/lunch" exact component={LunchBuilder} />
-            <Route path="/menu/dinner" exact component={DinnerBuilder} />
-            <Route path="/menu/drinks" exact component={DrinksBuilder} />
+            <Route path="/menu/breakfast" component={BreakfastBuilder} />
+            <Route path="/menu/lunch" component={LunchBuilder} />
+            <Route path="/menu/dinner" component={DinnerBuilder} />
+            <Route path="/menu/drinks" component={DrinksBuilder} />
+            <Route path="/reserve" component={ReserveBuilder} />
+            <Route path="/cart" component={CartBuilder} />
             <Route path="/" exact component={HomeBuilder} />
             <Redirect to="/" />
           </Switch>
+          <FoodModal />
         </Layout>
       </div>
     );

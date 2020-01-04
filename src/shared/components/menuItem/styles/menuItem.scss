@@ -1,5 +1,11 @@
 @import '../../../../shared/styles/tools/tools.scss';
 
+.btn-base{
+    color:white;
+    font-weight:300;
+    padding:8px 5px;
+    border-radius:3px;
+}
 .MenuItem{
     @include flex($just:space-between);
     margin-bottom:40px;
@@ -18,14 +24,27 @@
         @include flex($dir:column,$just:space-between);
         .ItemPrice{
             text-align:right;
+            margin-top:0;
             font-size:18px;
         }
         .ItemOrderBtn{
+            @extend .btn-base;
             background:#373737;
-            color:white;
-            font-weight:300;
-            padding:8px 5px;
-            border-radius:3px;
+        }
+    }
+}
+
+.OrderItem{
+    color:$gray;
+    .ItemInfo{
+        .ItemHeader{
+            font-weight:400;
+        } 
+    }
+    .ItemPurchase{
+        .ItemDeleteBtn{
+            @extend .btn-base;
+            background:#8E5A49;
         }
     }
 }

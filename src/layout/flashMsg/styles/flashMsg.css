@@ -1,0 +1,41 @@
+div.Hide {
+  display: none;
+}
+
+.FlashMsgContainer {
+  position: fixed;
+  top: 70px;
+  left: 5vw;
+  right: 5vw;
+  z-index: 200;
+  background: rgba(65, 159, 214, 0.741);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+.FlashMsgContainer .Msg {
+  margin: 0;
+}
+
+@media (min-width: 601px) {
+  .FlashMsgContainer {
+    width: 70%;
+    right: 15vw;
+    left: 15vw;
+  }
+}
+
+.Error {
+  background: rgba(189, 28, 56, 0.769);
+}
+/*# sourceMappingURL=flashMsg.css.map */

@@ -1,0 +1,41 @@
+@import '../../../styles/tools/tools.scss';
+.Backdrop{
+    @include flex($align:flex-start);
+}
+.ModalOpen{
+    overflow:hidden;
+}
+.Modal{
+    @include flex($dir:column);
+    width:80%;
+    max-width:400px;
+    margin:10vh auto 0;
+    background:$white;
+    border-radius:10px;
+    z-index:600;
+    padding:10px;
+    .Close{
+        align-self:flex-end;
+        display:inline-block;
+        font-size:25px;
+        color:$gray;
+    }
+    .ModalHeader{
+        margin:-3px 10px 12px 0;
+        align-self:flex-start;
+        color:$orange-red;
+        font-family: "Lato";
+        color: $gray;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+    ;
+    }
+}
+
+.Price{
+    font-weight:300;
+    margin-top:0;
+    font-size:1.5rem;
+    color:$gray;
+}

@@ -1,0 +1,46 @@
+@import '../../../../shared/styles/tools/tools.scss';
+
+.CartBtn{
+    @include button();
+}
+.Label{
+    font-weight:700;
+    color:$gray;
+    margin-bottom:10px;
+}
+.QuantityContainer{
+    @include flex($align:center);
+    p{
+        margin-right:10px;
+        font-weight:700;
+        color:$gray;
+    }
+    span{
+        font-size:1.5rem;
+        margin:0 10px;
+    }
+    .QuantityBtn{
+        background:#E7EDEE;
+        color:$gray;
+        @include rounded(25px);
+        font-size:16px;
+        &:hover{
+            color:#E7EDEE;
+            background:$gray;
+        }
+    }
+}
+.Textarea{
+    outline:none;
+    width:100%;
+    padding: 10px 10px;
+    border-radius:2px;
+    -webkit-appearance: none;
+    border:none;
+    color:$gray;
+    background: #E7EDEE;
+
+    height:100px;
+    resize:none;
+    margin-bottom:40px;
+}

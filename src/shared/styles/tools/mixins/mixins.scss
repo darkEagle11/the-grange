@@ -59,11 +59,16 @@
     border-radius:$brdr;
     color:$color;
     background:$bg;
+    transition:.3s ease-in;
     @if $size == 'sm'{
         padding:6px 15px;
     }
     @if $size == 'med'{
         padding:10px 20px;
+    }
+
+    &:hover{
+        background:darken($bg,10%);
     }
 }
 

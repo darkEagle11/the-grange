@@ -1,6 +1,6 @@
 import React from 'react';
 import globalClasses from '../../../shared/styles/globalClasses/globalClasses.css';
-import MenuItem from '../menuItem/menuItem';
+import MenuItem from '../../../shared/components/menuItem/menuItem';
 import classes from './styles/menuLayout.css';
 
 const menuLayout = props => {

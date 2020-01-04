@@ -1,0 +1,36 @@
+@import '../../../../shared/styles/tools/tools.scss';
+.Form{
+    margin-bottom:80px;
+    color:darken($gray,10%);
+}
+
+.InputGroupName{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+}
+
+.InputGroupPhone{
+    display:grid;
+    grid-template-columns: repeat(2,60px) 70px;
+    grid-gap:10px;
+}
+
+.InputGroupDate{
+    display:grid;
+    grid-template-columns: repeat(2,43px) 75px;
+    grid-gap:10px;
+}
+
+.InputGroupTime{
+    display:grid;
+    grid-template-columns: repeat(3,43px) 50px;
+    grid-gap:10px;
+    select{
+        font-size:14px;
+        padding:2px 10px;
+    }
+}
+.SubmitBtn{
+    @include button($size:'med');
+}

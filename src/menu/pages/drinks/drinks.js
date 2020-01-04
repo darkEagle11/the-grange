@@ -7,9 +7,7 @@ class Drinks extends Component {
             { name: "Sprite", price: 1 },
             { name: "Pina Calata", price: 5, descrip: "Smooth coconut that feel like creamy heaven on your tongue" },
             { name: "Coco cola", price: 1 }
-
         ]
-
     }
     render() {
         return (

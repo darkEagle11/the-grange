@@ -1,0 +1,57 @@
+.Backdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ModalOpen {
+  overflow: hidden;
+}
+
+.Modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+  margin: 10vh auto 0;
+  background: white;
+  border-radius: 10px;
+  z-index: 600;
+  padding: 10px;
+}
+
+.Modal .Close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: inline-block;
+  font-size: 25px;
+  color: #776f6f;
+}
+
+.Modal .ModalHeader {
+  margin: -3px 10px 12px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #F4774D;
+  font-family: "Lato";
+  color: #776f6f;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.Price {
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #776f6f;
+}
+/*# sourceMappingURL=Modal.css.map */
