@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import classes from './styles/sideDrawer.css';
+import { withRouter } from 'react-router-dom';
 
+import classes from './styles/sideDrawer.css';
 import menubox from '../../../assets/menubox.svg';
 import cartbox from '../../../assets/cartbox.svg';
 import Backdrop from '../../../shared/UI/Backdrop/Backdrop';
-// import drawerImg from '../../../assets/drawerImg.png';
 import NavigationItems from '../navigationItems/navigationItems';
 
 const sideDrawer = props => {
@@ -17,7 +17,7 @@ const sideDrawer = props => {
                     <i className={["material-icons", classes.MenuIcon].join(' ')}>menu</i>
                 </div>
 
-                <div className={classes.CartBox}>
+                <div className={classes.CartBox} onClick={() => props.history.push('/cart')}>
                     <img className={classes.CartBoxImg} src={cartbox} alt="" />
                     <i className={["material-icons", classes.CartIcon].join(" ")}>shopping_cart</i>
                 </div>
@@ -36,7 +36,6 @@ const sideDrawer = props => {
                         dropDownBtnStyle={classes.DropDownBtn}
                         dropDownLinks={classes.DropDownLinks}
                         click={() => setShowDrawerState(false)} />
-                    {/* <img src={drawerImg} alt="" className={classes.DrawerImg} /> */}
                 </div>
             </Backdrop>
 
@@ -45,4 +44,4 @@ const sideDrawer = props => {
     );
 }
 
-export default sideDrawer;
+export default withRouter(sideDrawer);

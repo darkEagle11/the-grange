@@ -1,3 +1,14 @@
+.base-input {
+  outline: none;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  border: none;
+  color: #776f6f;
+  background: #E7EDEE;
+}
+
 .Header {
   padding-top: 70px;
   margin-bottom: 40px;

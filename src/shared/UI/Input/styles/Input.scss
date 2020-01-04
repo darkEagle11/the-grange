@@ -4,14 +4,7 @@
     margin-bottom:15px;
 }
 .Input{
-    outline:none;
-    width:100%;
-    padding: 10px 10px;
-    border-radius:2px;
-    -webkit-appearance: none;
-    border:none;
-    color:$gray;
-    background: #E7EDEE;
+    @extend .base-input;
 }
 
 .Textarea{

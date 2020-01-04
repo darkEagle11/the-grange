@@ -1,0 +1,21 @@
+@import '../../../../shared/styles/tools/tools.scss';
+
+.PaymentForm{
+    color:$gray;
+}
+.CardElmtContainer{
+    label{
+        display:block;
+        font-weight:700;
+        margin:0 0 5px 0;
+        font-size:14px;
+    }
+    .CardElmt{
+        @extend .base-input;
+    }
+    .SubmitBtn{
+        display:block;
+        margin:20px auto 0;
+        @include button($size:'med');
+    }
+}

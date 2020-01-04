@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './styles/flashMsg.css';
+import { withRouter } from 'react-router-dom';
 
 const flashMsg = props => {
     const flashMsgClasses = [classes.FlashMsgContainer];
@@ -9,8 +10,12 @@ const flashMsg = props => {
     if (props.type === 'error') {
         flashMsgClasses.push(classes.Error)
     }
+    const flashMsgFunc = () => {
+        props.history.push(props.link)
+        props.removeMsg()
+    }
     return (
-        <div className={flashMsgClasses.join(' ')}>
+        <div onClick={flashMsgFunc} className={flashMsgClasses.join(' ')}>
             <p className={classes.Msg}>{props.msg}</p>
             <i
                 className={["material-icons", classes.Close].join(' ')}
@@ -19,4 +24,4 @@ const flashMsg = props => {
     )
 }
 
-export default flashMsg;
+export default withRouter(flashMsg);

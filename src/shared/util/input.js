@@ -14,6 +14,24 @@ export const createInputConfig = ({ inputType = 'input', rules, type = 'text', l
     }
 }
 
+export const fieldsetInputChanged = (state, formStateName, value, fieldsetIdentifier, inputIdentifier) => {
+    return {
+        ...state[formStateName],
+        [fieldsetIdentifier]: {
+            ...state[formStateName][fieldsetIdentifier],
+            inputs: {
+                ...state[formStateName][fieldsetIdentifier].inputs,
+                [inputIdentifier]: {
+                    ...state[formStateName][fieldsetIdentifier].inputs[inputIdentifier],
+                    value: value,
+                    touched: true,
+                }
+            }
+
+        }
+    }
+}
+
 export function checkValidity(value, rules, form) {
     let isValid = true;
     const validErrorMsgs = [];

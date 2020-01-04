@@ -1,3 +1,14 @@
+.base-input, .Textarea {
+  outline: none;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  border: none;
+  color: #776f6f;
+  background: #E7EDEE;
+}
+
 .CartBtn {
   border-radius: 4px;
   color: white;
@@ -42,7 +53,17 @@
   color: #776f6f;
   height: 25px;
   width: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
+  padding: 0;
   font-size: 16px;
 }
 
@@ -52,16 +73,21 @@
 }
 
 .Textarea {
-  outline: none;
-  width: 100%;
-  padding: 10px 10px;
-  border-radius: 2px;
-  -webkit-appearance: none;
-  border: none;
-  color: #776f6f;
-  background: #E7EDEE;
   height: 100px;
   resize: none;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.OrderCost {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 0;
+  color: #776f6f;
+}
+
+.OrderCost span {
+  color: #2975d8;
+  font-weight: 400;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=foodModal.css.map */

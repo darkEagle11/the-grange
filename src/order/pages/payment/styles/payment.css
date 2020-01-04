@@ -1,0 +1,27 @@
+.base-input {
+  outline: none;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  border: none;
+  color: #776f6f;
+  background: #E7EDEE;
+}
+
+.PaymentContainer {
+  margin: 60px 0;
+}
+
+.PaymentContainer .PaymentHeader {
+  color: #776f6f;
+}
+
+.PaymentContainer .PaymentHeader .Amount {
+  font-size: 18px;
+}
+
+.PaymentContainer .PaymentHeader .Amount span {
+  color: #2975d8;
+}
+/*# sourceMappingURL=payment.css.map */

@@ -7,7 +7,7 @@ div.Hide{
 }
 
 .FlashMsgContainer{
-    @include position($position:fixed,$top:70px,$left:$msg-margin,$right:$msg-margin,$zIndex:200);
+    @include position($position:fixed,$top:70px,$left:$msg-margin,$right:$msg-margin,$zIndex:40);
     @include bg($bg:$flash-bg);
     @include flex($just:space-between);
     width:90%;

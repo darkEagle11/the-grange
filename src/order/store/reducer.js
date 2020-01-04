@@ -4,10 +4,8 @@ import { updatedObj } from '../../shared/util/updatedObj';
 const initialState = {
     openModal: false,
     currentModal: null,
+    cart: [],
     msg: null,
-    cart: [
-        { name: "Fried Chicken", price: 13, specialRequest: '', quantity: 2 }
-    ]
 }
 
 const openModal = (state, action) => {
@@ -38,25 +36,27 @@ const addToCart = (state, action) => {
         msg: 'Item was added to cart'
     })
 }
-const addMsg = (state, action) => {
-    return updatedObj(state, {
-        msg: {
-            text: action.msg,
-            type: action.msgType,
-        }
-    })
-}
-const removeMsg = (state, action) => {
-    return updatedObj(state, {
-        msg: null
-    })
-}
 
 const deleteItemFromCart = (state, action) => {
     return updatedObj(state, {
         cart: state.cart.filter((item, index) => {
             return index !== action.index;
         })
+    })
+}
+
+const addMsg = (state, action) => {
+    return updatedObj(state, {
+        msg: {
+            text: action.msg,
+            type: action.msgType,
+            link: action.link,
+        }
+    })
+}
+const removeMsg = (state, action) => {
+    return updatedObj(state, {
+        msg: null
     })
 }
 const reducer = (state = initialState, action) => {

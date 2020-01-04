@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import classes from './styles/reserveForm.css';
 import Fieldset from '../../../shared/UI/Fieldset/Fieldset';
 import reserveFormState from './reserveFormState';
+import { fieldsetInputChanged } from '../../../shared/util/input';
 
 
 class reserveForm extends Component {
@@ -11,23 +12,9 @@ class reserveForm extends Component {
     }
 
     inputChangedHandler = (value, fieldsetIdentifier, inputIdentifier) => {
-        this.setState({
-            reserveForm: {
-                ...this.state.reserveForm,
-                [fieldsetIdentifier]: {
-                    ...this.state.reserveForm[fieldsetIdentifier],
-                    inputs: {
-                        ...this.state.reserveForm[fieldsetIdentifier].inputs,
-                        [inputIdentifier]: {
-                            ...this.state.reserveForm[fieldsetIdentifier].inputs[inputIdentifier],
-                            value: value,
-                            touched: true,
-                        }
-                    }
-
-                }
-            }
-        })
+        const newForm = fieldsetInputChanged(
+            this.state, 'reserveForm', value, fieldsetIdentifier, inputIdentifier)
+        this.setState({ reserveForm: newForm })
     }
     submitFormHandler = (e) => {
         e.preventDefault();

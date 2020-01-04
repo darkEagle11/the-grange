@@ -52,6 +52,7 @@
 }
 @mixin rounded($dim){
     @include square($dim);
+    @include flex($disp:inline-flex,$center:center);
     border-radius:50%;
 }
 

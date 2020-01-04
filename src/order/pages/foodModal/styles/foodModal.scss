@@ -1,4 +1,5 @@
 @import '../../../../shared/styles/tools/tools.scss';
+$light-blue: #E7EDEE;
 
 .CartBtn{
     @include button();
@@ -20,27 +21,32 @@
         margin:0 10px;
     }
     .QuantityBtn{
-        background:#E7EDEE;
+        background:$light-blue;
         color:$gray;
         @include rounded(25px);
+        padding:0;
         font-size:16px;
         &:hover{
-            color:#E7EDEE;
+            color:$light-blue;
             background:$gray;
         }
     }
 }
 .Textarea{
-    outline:none;
-    width:100%;
-    padding: 10px 10px;
-    border-radius:2px;
-    -webkit-appearance: none;
-    border:none;
-    color:$gray;
-    background: #E7EDEE;
-
+    @extend .base-input;
     height:100px;
     resize:none;
-    margin-bottom:40px;
+    margin-bottom:20px;
+}
+
+.OrderCost{
+    font-weight:300;
+    font-size:18px;
+    margin-top:0;
+    color:$gray;
+    span{
+        color:#2975d8;
+        font-weight:400;
+        margin-left:10px;
+    }
 }

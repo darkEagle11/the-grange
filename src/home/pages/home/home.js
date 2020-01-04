@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+
 import classes from './styles/home.css';
 import globalClasses from '../../../shared/styles/globalClasses/globalClasses.css';
 
 import Menu from '../../components/menu/menu';
-
 import cutter from '../../../assets/cutter.svg';
 import corneredBorder from '../../../assets/corner-border.png';
 
@@ -18,8 +19,12 @@ class Home extends Component {
                         <div className={classes.HeaderContent}>
                             <h1>The<br /> Grange</h1>
                             <div className={classes.HeaderButtons}>
-                                <button className={classes.ButtonOrder}>Order Now</button>
-                                <button className={classes.ButtonReserve}>Reserve</button>
+                                <button
+                                    className={classes.ButtonOrder}
+                                    onClick={() => this.props.history.push('/menu/lunch')}>Order Now</button>
+                                <button
+                                    className={classes.ButtonReserve}
+                                    onClick={() => this.props.history.push('/reserve')}>Reserve</button>
                             </div>
                         </div>
                     </div>
@@ -63,4 +68,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withRouter(Home);

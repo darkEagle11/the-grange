@@ -37,10 +37,11 @@ export const removeMsg = () => {
     }
 }
 
-export const addMsg = (msg, type) => {
+export const addMsg = (msg, type, link) => {
     return {
         type: actionTypes.ADD_MSG,
         msg: msg,
         msgType: type,
+        link: link
     }
 }

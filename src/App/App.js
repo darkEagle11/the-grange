@@ -12,6 +12,7 @@ import DrinksBuilder from '../menu/pages/drinks/drinks';
 import ReserveBuilder from '../reserve/pages/reserve/reserve';
 import CartBuilder from '../order/pages/cart/cart';
 import FoodModal from '../order/pages/foodModal/foodModal';
+import PaymentBuilder from '../order/pages/payment/payment';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route path="/menu/drinks" component={DrinksBuilder} />
             <Route path="/reserve" component={ReserveBuilder} />
             <Route path="/cart" component={CartBuilder} />
+            <Route path="/payment" component={PaymentBuilder} />
             <Route path="/" exact component={HomeBuilder} />
             <Redirect to="/" />
           </Switch>

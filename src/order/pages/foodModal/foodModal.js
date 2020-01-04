@@ -48,7 +48,7 @@ class FoodModal extends Component {
                 this.state.specialRequest
             );
             this.props.onCloseModal()
-            this.props.addMsg('Item was added to cart', 'success');
+            this.props.addMsg('Item was added to cart', 'success', '/cart');
         }
 
         if (this.props.currentModal) {
@@ -69,8 +69,14 @@ class FoodModal extends Component {
                     </div>
 
                     <label className={classes.Label}>Special Request</label>
-                    <textarea className={classes.Textarea} value={this.state.specialRequest} onChange={(e) => this.storeInput(e.target.value, "specialRequest")}></textarea>
+                    <textarea
+                        className={classes.Textarea}
+                        value={this.state.specialRequest}
+                        onChange={(e) => this.storeInput(e.target.value, "specialRequest")}></textarea>
 
+                    <p className={classes.OrderCost}>Order Cost:
+                    <span>${(this.props.currentModal.price * this.state.quantity).toFixed(2)}</span>
+                    </p>
                     <button
                         className={classes.CartBtn}
                         onClick={closeModalFuncs}>Add To Cart</button>
@@ -91,7 +97,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onCloseModal: () => dispatch(orderActions.closeModal()),
-        addMsg: (msg, type) => dispatch(orderActions.addMsg(msg, type)),
+        addMsg: (msg, type, link) => dispatch(orderActions.addMsg(msg, type, link)),
         addItemToCart: (name, price, quantity, specialRequest) => dispatch(orderActions.addToCart(name, price, quantity, specialRequest))
     }
 }

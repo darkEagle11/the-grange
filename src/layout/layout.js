@@ -11,7 +11,8 @@ const layout = props => {
         show
         msg={props.msg.text}
         removeMsg={props.onRemoveMsg}
-        type={props.msg.type} /> : null;
+        type={props.msg.type}
+        link={props.msg.link} /> : null;
     return (
         <React.Fragment>
             {flashMsg}
