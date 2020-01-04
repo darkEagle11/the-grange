@@ -11,7 +11,7 @@ class Reserve extends Component {
             <div className={[classes.ReserveContainer, globalClasses.Container].join(' ')}>
                 <header className={classes.Header}>
                     <h2>Rerservations</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut lectus ut ligula tristique lobortis. Suspendisse in venenatis odio, ut malesuada est. Pellentesque convallis erat diam, eget fringilla nisi aliquam.</p>
+                    <p>Don't like waiting in line, just reserve the time that will fit you best.The typical wait is between 2-3 business days and tell if you're eligble for desired time.</p>
                 </header>
                 <ReserveForm />
             </div>

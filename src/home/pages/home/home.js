@@ -33,7 +33,7 @@ class Home extends Component {
 
                 <section className={classes.SectionAbout}>
                     <div className={[globalClasses.Container, classes.AboutContent].join(' ')}>
-                        <p className={classes.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+                        <p className={classes.Text}>Here at The Grange, we are committed to giving you the best experience possible. And a unqiue vibe that you will find nowhere else. All of our produce are grown locally, so we reduce our carbon footprint. In addition, we admire small startups to come to our cafe to dine </p>
                         <img className={classes.TextBorder} src={corneredBorder} alt="" />
                     </div>
                 </section>

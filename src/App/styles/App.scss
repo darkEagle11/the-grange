@@ -6,6 +6,7 @@
     font-family:'Lato', sans-serif;
     @include flex($dir:column);
     min-height:100vh;
+    letter-spacing:.5px;
     * {
         box-sizing:border-box;
     }

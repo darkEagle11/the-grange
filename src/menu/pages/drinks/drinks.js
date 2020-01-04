@@ -4,9 +4,31 @@ import MenuLayout from '../../components/menuLayout/menuLayout';
 class Drinks extends Component {
     state = {
         items: [
-            { name: "Sprite", price: 1 },
-            { name: "Pina Calata", price: 5, descrip: "Smooth coconut that feel like creamy heaven on your tongue" },
-            { name: "Coco cola", price: 1 }
+            {
+                name: "RED STRIPE JAMAICAN LAGER",
+                price: 7,
+            },
+            {
+                name: "Milkshakes",
+                price: 5,
+            },
+            {
+                name: "Sprite",
+                price: 1.5,
+            },
+            {
+                name: "Pina Colata",
+                price: 3,
+            },
+            {
+                name: "Orange Juice",
+                price: 3,
+            },
+            {
+                name: "Bingo suprise",
+                price: 2,
+            },
+
         ]
     }
     render() {
