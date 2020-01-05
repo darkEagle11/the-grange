@@ -1,18 +1,8 @@
-import React, { Component, Suspense, lazy } from 'react';
+import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import classes from './styles/App.css';
 import Layout from '../layout/layout';
-
-import HomeBuilder from '../home/pages/home/home';
-// import BreakfastBuilder from '../menu/pages/breakfast/breakfast';
-// import LunchBuilder from '../menu/pages/lunch/lunch';
-// import DinnerBuilder from '../menu/pages/dinner/dinner';
-// import DrinksBuilder from '../menu/pages/drinks/drinks';
-// import ReserveBuilder from '../reserve/pages/reserve/reserve';
-// import CartBuilder from '../order/pages/cart/cart';
-// import FoodModal from '../order/pages/foodModal/foodModal';
-// import PaymentBuilder from '../order/pages/payment/payment';
 import asyncComponent from '../shared/components/asyncComponent/asyncComponent';
 
 const BreakfastBuilder = asyncComponent(() => import('../menu/pages/breakfast/breakfast'));
