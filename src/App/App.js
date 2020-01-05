@@ -3,6 +3,9 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 
 import classes from './styles/App.css';
 import Layout from '../layout/layout';
+
+import HomeBuilder from '../home/pages/home/home';
+
 import asyncComponent from '../shared/components/asyncComponent/asyncComponent';
 
 const BreakfastBuilder = asyncComponent(() => import('../menu/pages/breakfast/breakfast'));
